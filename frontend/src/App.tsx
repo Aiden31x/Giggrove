@@ -4,6 +4,7 @@ import { WorkExpl } from './pages/worker-expl'
 
 import './App.css'
 import { CompN } from './pages/companypage'
+import { Gigdesc } from './pages/gigpage'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Route path="/home" element={<Home />} />
       <Route path="/workexpl" element={<WorkExpl />} />
       <Route path="/company" element={<CompN />} />
+      <Route path="/jobdesc" element={<Gigdesc />} />
       </Routes></BrowserRouter>
     </>
   )

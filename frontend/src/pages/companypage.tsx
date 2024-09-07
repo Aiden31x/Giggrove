@@ -14,7 +14,7 @@ export function GridBackgroundDemo() {
 
 export const CompN = () => {
     return (
-        <div className="relative p-4">
+        <div className="relative p-4 ">
             <BackgroundBeamsDemo
                 className="items-left"
                 title="Apple"
@@ -48,16 +48,16 @@ export const CompN = () => {
                     href="https://www.apple.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-500 underline hover:text-blue-700 block pt-3 pb-2 mb-2"
+                    className="text-blue-500 underline text-xl hover:text-blue-700 block pt-3 pb-2 mb-2"
                 >
                     Apple
                 </a>
 
                 {/* Heading for the section */}
-                <h2 className="text-2xl font-medium pb-5">Round Peg in the Square Holes</h2>
+                <h2 className="text-3xl font-medium pb-5">Round Peg in the Square Holes</h2>
 
                 {/* Content about Apple */}
-                <p className="max-w-prose">
+                <p className="max-w-prose text-l">
                     Apple Inc. is a global leader in technology and innovation. Known for its
                     groundbreaking products like the iPhone, iPad, and Mac, Apple constantly
                     pushes the boundaries of what is possible in technology. The company's
@@ -71,16 +71,17 @@ export const CompN = () => {
                 <GridBackgroundDemo />
                 <div className="relative z-10 p-8">
                     <div className="pl-2 max-w-full mx-auto">
-                        <h1 className="font-normal font-extrabold text-left pl-8 text-4xl">Gigs</h1>
+                        <h1 className="font-normal font-extrabold text-left pl-11 text-5xl">Gigs</h1>
                     </div>
                     {/* Cards section */}
-                    <div className="flex flex-col items-center space-y-8">
+                    <div className="flex flex-col items-center space-y-8 pt-11">
                         <CardM 
                             job="Full Stack Developer" 
                             domain="Web Development" 
                             subdomain="React JS" 
                             description="We're seeking a skilled Full Stack Developer to join our dynamic team. You'll be responsible for developing and maintaining web applications using React for the frontend and Node.js for the backend. The ideal candidate should have a strong understanding of web technologies and be comfortable working in an agile environment." 
                             link="#"
+                            bidvalue="$50"
                         />
                         <CardM 
                             job="UI/UX Designer" 
@@ -88,6 +89,7 @@ export const CompN = () => {
                             subdomain="User Interface" 
                             description="We are looking for a creative UI/UX Designer to join our team. The ideal candidate should have a strong portfolio showcasing design skills and the ability to create user-friendly interfaces." 
                             link="#"
+                            bidvalue="$12"
                         />
                         {/* Add more CardM components as needed */}
                     </div>
