@@ -43,7 +43,8 @@ module.exports = {
         buttony: '#1d72e8',
         gray: '#e8eaed',
         gsocbg: '#d6d8dc',
-        whote: '#edf0f5',  // Adding the custom color named 'gsocbg'
+        whote: '#edf0f5',
+        writer: '#9fa2a4',  // Adding the custom color named 'gsocbg'
       },
     },
   },
