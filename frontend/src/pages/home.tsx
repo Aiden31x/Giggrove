@@ -62,62 +62,18 @@ export const Home = () => {
       <div className="px-4 py-8">
         <h2 className="text-2xl font-semibold text-center mb-6">Additional Content</h2>
         <div className="space-y-6">
-          <section className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold">Section 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </section>
-          <section className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold">Section 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </section>
-          <section className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold">Section 3</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </section>
-          <section className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold">Section 4</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </section>
-          <section className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold">Section 4</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </section>
-          <section className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold">Section 4</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </section>
-          <section className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold">Section 4</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </section>
-          <section className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold">Section 4</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </section>
+          {Array.from({ length: 8 }, (_, index) => (
+            <section
+              key={index}
+              className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-lg"
+            >
+              <h3 className="text-xl font-bold">{`Section ${index + 1}`}</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </section>
+          ))}
         </div>
       </div>
     </div>

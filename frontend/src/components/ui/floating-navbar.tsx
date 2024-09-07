@@ -36,20 +36,20 @@ export const FloatingNav = ({
         )}
         style={{ height: "4rem" }} // Set a fixed height for the navbar
       >
-        <div className="flex items-center h-full pl-5 pr-5"> {/* Set padding and height */}
+        <div className ="flex items-center h-full pl-5 pr-5"> {/* Set padding and height */}
           <img
             src="/logoplz.jpeg"
             alt="Logo"
-            className="h-12 w-18 sm:h-16 sm:w-24 object-contain" // Use object-contain to ensure the logo scales properly within the navbar
+            className ="h-12 w-18 sm:h-16 sm:w-24 object-contain" // Use object-contain to ensure the logo scales properly within the navbar
           />
         </div>
 
         {isAuroraCrossed && (
-          <div className="flex space-x-4 pr-4"> {/* Added padding to space buttons properly */}
-            <button className="px-4 py-2 text-sm font-medium text-black bg-transparent border rounded-full border-neutral-200 dark:border-white/[0.2] dark:text-white">
+          <div className ="flex space-x-4 pr-4"> {/* Added padding to space buttons properly */}
+            <button className ="px-4 py-2 text-sm font-medium text-black bg-transparent border rounded-full border-neutral-200 dark:border-white/[0.2] dark:text-white">
               Launch Gig
             </button>
-            <button className="px-4 py-2 text-sm font-medium text-black bg-transparent border rounded-full border-neutral-200 dark:border-white/[0.2] dark:text-white">
+            <button className ="px-4 py-2 text-sm font-medium text-black bg-transparent border rounded-full border-neutral-200 dark:border-white/[0.2] dark:text-white">
               Score Gig
             </button>
           </div>
