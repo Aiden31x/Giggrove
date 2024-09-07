@@ -2,6 +2,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { AuroraBackground } from "@/components/ui/aurora-background";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export function AuroraBackgroundDemo() {
   return (
@@ -45,6 +51,8 @@ export function FloatingNavDemo() {
     };
   }, []);
 
+
+
   return (
     <div className="relative w-full">
       <FloatingNav navItems={[]} isAuroraCrossed={isAuroraCrossed} />
@@ -54,6 +62,34 @@ export function FloatingNavDemo() {
     </div>
   );
 }
+
+export function AccordionDemo() {
+  return (
+    <Accordion type="single" collapsible className="w-full">
+      <AccordionItem value="item-1">
+        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It adheres to the WAI-ARIA design pattern.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger>Is it styled?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It comes with default styles that matches the other
+          components&apos; aesthetic.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3">
+        <AccordionTrigger>Is it animated?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It&apos;s animated by default, but you can disable it if you
+          prefer.
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+  )
+}
+
 
 export const Home = () => {
   return (
@@ -75,6 +111,9 @@ export const Home = () => {
             </section>
           ))}
         </div>
+      </div>
+      <div>
+        <AccordionDemo />
       </div>
     </div>
   );

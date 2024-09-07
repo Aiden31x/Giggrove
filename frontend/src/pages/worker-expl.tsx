@@ -147,7 +147,9 @@ export function BentoGridDemo() {
 export const WorkExpl = () => {
   return (
     <div>
-      <BackgroundBeamsDemo />
+      <BackgroundBeamsDemo
+      title="Organisations" 
+      description="Find companies to work with"  />
       <FilterButton />
       <BentoGridDemo />
     </div>
